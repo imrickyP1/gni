@@ -1,0 +1,215 @@
+@page "/"
+
+<PageTitle>Personal Website</PageTitle>
+
+<div class="profile-page">
+    <section class="hero-panel surface reveal" id="overview">
+        <div class="hero-copy">
+            <p class="eyebrow">Personal Website</p>
+            <h1>@Profile.Name</h1>
+            <p class="hero-text">@Profile.Status</p>
+
+            <div class="hero-tags">
+                <span>@Profile.Age years old</span>
+                <span>@Profile.Gender</span>
+                <span>@Profile.TypeOfWork</span>
+            </div>
+
+            <p class="hero-note">
+                This profile page includes the sections you asked for: a profile picture, age, name, gender,
+                hobbies, favorite, type of work, status, school details, language, social accounts, a footer,
+                and smooth transitions with animation.
+            </p>
+        </div>
+
+        <div class="hero-photo">
+            <div class="photo-frame">
+                <img src="/images/profile-avatar.svg" alt="Profile placeholder picture" />
+            </div>
+            <div class="photo-caption">
+                <strong>Profile Pic</strong>
+                <span>Replace this image with your real photo in `wwwroot/images/profile-avatar.svg`.</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-grid" id="details">
+        <article class="surface info-card reveal">
+            <p class="section-label">Basic Info</p>
+            <h2>Profile Details</h2>
+
+            <div class="info-list">
+                <div class="info-row">
+                    <span>Name</span>
+                    <strong>@Profile.Name</strong>
+                </div>
+                <div class="info-row">
+                    <span>Age</span>
+                    <strong>@Profile.Age</strong>
+                </div>
+                <div class="info-row">
+                    <span>Gender</span>
+                    <strong>@Profile.Gender</strong>
+                </div>
+                <div class="info-row">
+                    <span>Status</span>
+                    <strong>@Profile.Status</strong>
+                </div>
+                <div class="info-row">
+                    <span>Type of Work</span>
+                    <strong>@Profile.TypeOfWork</strong>
+                </div>
+            </div>
+        </article>
+
+        <article class="surface info-card reveal">
+            <p class="section-label">Lifestyle</p>
+            <h2>Hobbies and Favorites</h2>
+
+            <div class="chip-group">
+                @foreach (var hobby in Profile.Hobbies)
+                {
+                    <span class="chip">@hobby</span>
+                }
+            </div>
+
+            <div class="favorite-box">
+                <span>Favorite</span>
+                <strong>@Profile.Favorite</strong>
+            </div>
+        </article>
+
+        <article class="surface info-card reveal">
+            <p class="section-label">Background</p>
+            <h2>From, School, Language</h2>
+
+            <div class="stack-list">
+                <div>
+                    <span>From</span>
+                    <strong>@Profile.From</strong>
+                </div>
+                <div>
+                    <span>School</span>
+                    <strong>@Profile.School</strong>
+                </div>
+                <div>
+                    <span>Language</span>
+                    <strong>@string.Join(", ", Profile.Languages)</strong>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="surface school-panel reveal" id="school">
+        <div class="section-heading">
+            <p class="section-label">School Life</p>
+            <h2>What I Focus On</h2>
+            <p>
+                This gives the site a more personal school-style section, where you can show where you study
+                and the kind of language or subjects you are comfortable using.
+            </p>
+        </div>
+
+        <div class="school-grid">
+            <article class="mini-card">
+                <span class="mini-label">Current School</span>
+                <strong>@Profile.School</strong>
+                <p>Use this card for your strand, course, or grade level.</p>
+            </article>
+
+            <article class="mini-card">
+                <span class="mini-label">Language Type</span>
+                <strong>@string.Join(" / ", Profile.Languages)</strong>
+                <p>Perfect for the languages you speak, study, or use online.</p>
+            </article>
+
+            <article class="mini-card">
+                <span class="mini-label">Dream Work</span>
+                <strong>@Profile.TypeOfWork</strong>
+                <p>You can describe the kind of work or career you want to build.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="surface social-panel reveal" id="socials">
+        <div class="section-heading">
+            <p class="section-label">Social Accounts</p>
+            <h2>Find Me Online</h2>
+            <p>All links are placeholders right now, so you can easily replace them with your real accounts.</p>
+        </div>
+
+        <div class="social-grid">
+            <a class="social-card" href="@Profile.FacebookUrl" target="_blank" rel="noreferrer">
+                <span class="social-name">Facebook</span>
+                <strong>@Profile.FacebookHandle</strong>
+                <span class="social-meta">FB account</span>
+            </a>
+
+            <a class="social-card" href="@Profile.TiktokUrl" target="_blank" rel="noreferrer">
+                <span class="social-name">TikTok</span>
+                <strong>@Profile.TiktokHandle</strong>
+                <span class="social-meta">TikTok account</span>
+            </a>
+
+            <a class="social-card" href="@Profile.InstagramUrl" target="_blank" rel="noreferrer">
+                <span class="social-name">Instagram</span>
+                <strong>@Profile.InstagramHandle</strong>
+                <span class="social-meta">Instagram account</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="surface site-footer reveal" id="footer">
+        <div>
+            <p class="section-label">Footer</p>
+            <h2>@Profile.Name</h2>
+            <p>
+                A clean Blazor personal website with a side navigation bar, profile layout, social links, and smooth transitions.
+            </p>
+        </div>
+
+        <a class="footer-link" href="#overview">Back to top</a>
+    </footer>
+</div>
+
+@code {
+    private readonly PersonalProfile Profile = new()
+    {
+        Name = "Your Name Here",
+        Age = 18,
+        Gender = "Your Gender",
+        Status = "Student, dreamer, and open to new opportunities",
+        TypeOfWork = "Frontend design and web development",
+        Favorite = "Coffee, calm playlists, and creative website projects",
+        From = "Your City, Philippines",
+        School = "Your School Name",
+        Hobbies = ["Drawing", "Gaming", "Watching movies", "Listening to music"],
+        Languages = ["English", "Filipino"],
+        FacebookHandle = "facebook.com/yourname",
+        FacebookUrl = "https://facebook.com/yourname",
+        TiktokHandle = "@yourtiktok",
+        TiktokUrl = "https://www.tiktok.com/@yourtiktok",
+        InstagramHandle = "@yourinstagram",
+        InstagramUrl = "https://www.instagram.com/yourinstagram"
+    };
+
+    private sealed class PersonalProfile
+    {
+        public required string Name { get; init; }
+        public required int Age { get; init; }
+        public required string Gender { get; init; }
+        public required string Status { get; init; }
+        public required string TypeOfWork { get; init; }
+        public required string Favorite { get; init; }
+        public required string From { get; init; }
+        public required string School { get; init; }
+        public required string[] Hobbies { get; init; }
+        public required string[] Languages { get; init; }
+        public required string FacebookHandle { get; init; }
+        public required string FacebookUrl { get; init; }
+        public required string TiktokHandle { get; init; }
+        public required string TiktokUrl { get; init; }
+        public required string InstagramHandle { get; init; }
+        public required string InstagramUrl { get; init; }
+    }
+}
