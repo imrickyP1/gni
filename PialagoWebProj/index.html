@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Side Navigation Bar -->
+    <nav class="sidenav" id="sidenav">
+        <div class="nav-header">
+            <div class="nav-avatar-wrap">
+                <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t39.30808-6/645299265_2404395793375513_2529167585883285668_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeEWIqCorake14HmKe0Z8dNQ1Jw-qyW8xgLUnD6rJbzGAr6cu2Pngg-CNhlMHoBDkALfStTXUf7eGi4OZPnkOAUp&_nc_ohc=BXKv5hAdP3UQ7kNvwETn2fz&_nc_oc=Ado0rnGDmV8ck2aBcADSI5ZBDCKtI9ULQL_ZS5kNzb2eY6L_DjpuxPnD98hXdu6ZsB4&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=j0GdvuOFe5v0oAdGE7zB4w&_nc_ss=782a8&oh=00_Af3xbfReeN1J8y8m7rvEpb-Y8cEY5_1t19b5FRMrLCGKtg&oe=69F7BD77" alt="Profile" class="nav-avatar">
+            </div>
+            <h3>Darlene A. Pialago</h3>
+            <p class="nav-role">Coastal-inspired portfolio</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active" data-section="home"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="#about" class="nav-link" data-section="about"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills"><i class="fas fa-code"></i><span>Skills</span></a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects"><i class="fas fa-briefcase"></i><span>Projects</span></a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="nav-footer">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/darlene.lene.pialago.albania" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.messenger.com/e2ee/t/8165990040081963" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="https://www.tiktok.com/@darlenepialago" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="home-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Darlen A. Pialago</h1>
+                <p class="tagline">A confident <span class="typed-text" id="typedText"></span><span class="cursor">|</span></p>
+                <p class="intro">This profile now leans into the soft ocean-blue mood, clean portrait framing, and polished personal vibe from your reference photo.</p>
+                <div class="home-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="home-illustration profile-hero-card">
+                <div class="blob"></div>
+                <div class="hero-photo-frame">
+                    <div class="hero-photo-badge">Featured Profile</div>
+                    <img src="https://scontent.fcgy2-3.fna.fbcdn.net/v/t39.30808-6/588071314_2324881464660280_5463967109126369875_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeEOY0kNSoT_u_ZOdHYpnJPnyiMuUoUcnvXKIy5ShRye9TX-O-ZNJTAfi7Exi11NT_-b_9j2sONnJG7eq0AyBT4Z&_nc_ohc=RRafK6oFVo8Q7kNvwETE5cf&_nc_oc=AdqwrLzxPQqieat_Twr4AARLUXye7dzA9uC3kd0yTf6cp7cwsrSA5uytPQEvP3K7OHU&_nc_zt=23&_nc_ht=scontent.fcgy2-3.fna&_nc_gid=Hq864ePdMUe5Kw-jMCLsRg&_nc_ss=782a8&oh=00_Af02OUVNwzRCd5mKAAgnD5jPxh9Ar5kZxoFE3OEoCmfzlA&oe=69F7961D" alt="Portrait preview" class="hero-photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <h2 class="section-title">Profile</h2>
+            <div class="section-line"></div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame portrait-frame">
+                        <div class="portrait-accent"></div>
+                        <img src="https://scontent.fcgy2-4.fna.fbcdn.net/v/t39.30808-6/578086349_2309972622817831_5954577067160563162_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFrl3aei7V6WSM8Kn2QmT1DC2j9TW1StMULaP1NbVK0xRp_2O9cqagK1XzmQ2wJPEN_K8RxCkMi2mJu0ejsLtCr&_nc_ohc=pPQ3MGbRpXsQ7kNvwEilZ5Q&_nc_oc=AdoAXTN2N1QIuAPnu1P8Y_xlcCx1iX8oltENVivDXPloGpy61mgDzmthJPgjpz6hMMo&_nc_zt=23&_nc_ht=scontent.fcgy2-4.fna&_nc_gid=esqBCkpAeI7PL-sL6vCLVA&_nc_ss=782a8&oh=00_Af2SPVwHJD66Y4QXbVavJ7Md1M8UcZbHx-wrB83FIXur2A&oe=69F7B2B1" alt="Profile Photo">
+                        <div class="portrait-caption">
+                            <span>Ocean mood</span>
+                            <strong>Fresh, elegant, personal</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>This profile section is redesigned to feel more like a real personal portrait instead of a default developer card. The shapes, color palette, and image framing take cues from your sample photo.</p>
+                    <p>You can keep this style as-is, or swap in your exact image later and the layout will still fit nicely on both desktop and mobile.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-camera-retro"></i>
+                            <div>
+                                <strong>Style</strong>
+                                <p>Portrait-focused layout</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Theme</strong>
+                                <p>Seaside blue palette</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-image"></i>
+                            <div>
+                                <strong>Photo Frame</strong>
+                                <p>Soft editorial card</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-mobile-screen"></i>
+                            <div>
+                                <strong>Responsive</strong>
+                                <p>Mobile-friendly profile</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-heart"></i> Connect With Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <h2 class="section-title">My Skills</h2>
+            <div class="section-line"></div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PHP</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git & GitHub</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Figma</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>VS Code</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Linux</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="section-line"></div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>E-Commerce Store</h4>
+                        <p>A full-stack online store with cart, checkout, and payment integration.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-blog"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Blog Platform</h4>
+                        <p>A responsive blogging site with markdown support and user authentication.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-cloud-sun"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Weather App</h4>
+                        <p>Real-time weather data with location search and 7-day forecasting.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-palette"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>UI Kit Design</h4>
+                        <p>A modern UI component library designed in Figma for rapid prototyping.</p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-tasks"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Task Manager</h4>
+                        <p>A productivity app with drag-and-drop tasks, deadlines, and reminders.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-utensils"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Recipe Finder</h4>
+                        <p>Search and discover recipes by ingredient with nutrition info.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-line"></div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's talk about everything!</h3>
+                    <p>Feel free to reach out for collaborations, project ideas, or just a friendly chat. I'm always open to discussing new opportunities.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p>San Antonio, Katipunan, Zamboanga del Norte, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Gmail</strong>
+                                <p>darlenealbaniapialago@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+63 931 860 8924</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Darlene A. Pialago. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
